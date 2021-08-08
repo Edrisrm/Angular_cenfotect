@@ -1,1 +1,28 @@
-<p>agregar-tareas works!</p>
+<div class="col-md-8 mx-auto">
+    <h2 class="text-center">Agregar una tarea</h2>
+    <form class="mt-5" (ngSubmit)="agregarTarea()" #form="ngForm">
+    <div class="form-group mt-2">
+       <label>Nombre de tarea</label>
+       <input type="text"
+        class="form-control "
+        name="nombre"
+        placeholder="Nombre Tarea"
+        [(ngModel)]="tareas.nombreTarea"
+       />
+   </div> 
+   <div class="form-group mt-2">
+      <label>Fecha de la tarea</label>
+      <input type='date' 
+      class="form-control"
+      name="fecha"
+      placeholder="fecha"
+      [(ngModel)]="tareas.fecha"
+       />
+   </div>
+   <input type="submit" class=" mb-2 font-weight-bold text-uppercase mt-5 btn btn-primary btn-block py-3" value="Agregar Evento" />
+    </form>
+</div>
+<div class="col-md-8 mx-auto mt-5 d-flex align-items-center flex-column mb-5">
+   <h2 class="text-center">Lista de tareas creadas</h2>
+   <a routerLink="/tareas" class="btn btn-primary btn-lg mt-3 mb-3 btn-block">Ir a la Lista de Tareas</a>
+</div>

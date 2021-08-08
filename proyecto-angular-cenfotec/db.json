@@ -1,0 +1,28 @@
+{
+    "eventos": [
+      {
+        "nombreEvento": "Senior QA Engineer",
+        "descripcion": "Senior QA Engineer",
+        "fecha": "2021-06-25",
+        "id": 1
+      },
+      {
+        "nombreEvento": "Analista de Datos",
+        "descripcion": "Analista de Datos",
+        "fecha": "2021-06-11",
+        "id": 2
+      }
+    ],
+    "tareas": [
+      {
+        "nombreTarea": "Ingles",
+        "fecha": "2021-07-16",
+        "id": 1
+      },
+      {
+        "nombreTarea": "Elvin",
+        "fecha": "2021-07-16",
+        "id": 2
+      }
+    ]
+  }
