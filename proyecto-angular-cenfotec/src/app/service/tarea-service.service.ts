@@ -12,4 +12,10 @@ export class TareaServiceService {
   public getTareas():Observable<TareasI[]>{
     return this.http.get<TareasI[]>(this.url+'/tareas');
   }
+  public createTareas(tareas:TareasI):Observable<TareasI[]>{
+    return this.http.post<TareasI[]>(this.url+'/tareas', tareas);
+  }
+  public deleteTarea(id:number){
+    return this.http.delete(this.url+"/tareas/"+id);
+  }
 }

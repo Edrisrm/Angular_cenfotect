@@ -1,1 +1,29 @@
-<p>listar-eventos works!</p>
+<div class="col-md-8 mx-auto mt-5 d-flex align-items-center flex-column">
+    <h2 class="text-center">Crear Nuevo Evento</h2>
+    <a routerLink="/agregar-evento" class="btn btn-primary btn-lg mt-3 mb-3 btn-block">Crear Evento</a>
+
+</div>
+    <h2 class="text-center">Lista de Eventos</h2>
+    <div class="container mt-5 mb-5">
+        <table class="table table-dark table-striped table-responsive">
+            <thead>
+              <tr>
+                <th scope="col">id #</th>
+                <th scope="col">Nombre Evento</th>
+                <th scope="col">Descripcion</th>
+                <th scope="col">Fecha</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody *ngFor="let evento of eventos">
+              <tr>
+                <th scope="row">{{evento.id}}</th>
+                <td>{{evento.nombreEvento}}</td>
+                <td>{{evento.descripcion}}</td>
+                <td>{{evento.fecha}}</td>
+                <td><button class="btn btn-danger" (click)="eliminarEvento(evento.id)">Eliminar</button></td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+

@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EventosModule } from './eventos/eventos.module';
 import { FooterModule } from './footer/footer.module';
 import { NavbarModule } from './navbar/navbar.module';
 import { PrincipalComponent } from './principal/principal.component';
@@ -22,7 +23,8 @@ import { TareasModule } from './tareas/tareas.module';
     ReactiveFormsModule,
     NavbarModule,
     FooterModule,
-    TareasModule
+    TareasModule,
+    EventosModule
   ],
   providers: [],
   bootstrap: [AppComponent]

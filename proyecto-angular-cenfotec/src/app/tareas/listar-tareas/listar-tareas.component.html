@@ -12,6 +12,7 @@
                 <th scope="col">id #</th>
                 <th scope="col">Nombre Tarea</th>
                 <th scope="col">Fecha</th>
+                <th scope="col">Acciones</th>
               </tr>
             </thead>
             <tbody *ngFor="let tarea of tareas">
@@ -19,6 +20,7 @@
                 <th scope="row">{{tarea.id}}</th>
                 <td>{{tarea.nombreTarea}}</td>
                 <td>{{tarea.fecha}}</td>
+                <td><button class="btn btn-danger" (click)="eliminarTarea(tarea.id)">Eliminar</button></td>
               </tr>
             </tbody>
           </table>
