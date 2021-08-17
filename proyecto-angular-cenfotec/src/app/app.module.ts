@@ -10,11 +10,14 @@ import { FooterModule } from './footer/footer.module';
 import { NavbarModule } from './navbar/navbar.module';
 import { PrincipalComponent } from './principal/principal.component';
 import { TareasModule } from './tareas/tareas.module';
+import { ClientesComponent } from './clientes/clientes.component';
+import { ClientesService } from './service/clientes.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrincipalComponent
+    PrincipalComponent,
+    ClientesComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,7 @@ import { TareasModule } from './tareas/tareas.module';
     TareasModule,
     EventosModule
   ],
-  providers: [],
+  providers: [ClientesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
